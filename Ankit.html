@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PROFILE</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        *{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+
+    border: 10px double ;
+    background-color:white;
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black ;
+    min-height:100vh;
+}
+.image{
+    margin: 3rem;
+    height: 350px;
+    width: 350px;
+    border: 10px double ;
+    border-radius: 250px;
+    outline: 5px solid rgb(62, 63, 58);
+    outline-offset: 2px;
+}
+.content{
+    margin:2rem;
+    padding:0.2em;
+    border: solid darkslategray;
+    text-align: center;
+    color: darkslategray;
+    
+}
+.box{
+    background-color: white;
+    margin:3rem;
+    border:3px solid darkslategray;
+    border-radius:20px ;
+    padding: 5px;
+}
+ul li{
+    margin:.2rem;
+    list-style-type: none;
+    border: 2px solid darkslategray;
+}
+ul li:last-child{
+    border-radius:0px 0px 20px 20px ;
+
+}
+a{
+    text-decoration: none;
+    color:darkblue
+}
+a:hover{
+    color:blue;
+}
+    </style>
+</head>
+<body>
+    
+    <h1 class="content">
+        MY PROFILE
+    </h1>
+    <div>
+        <img class="image" src="https://i.ibb.co/r3zGB5M/12022002020045.jpg" alt="Profile Picture">
+        
+    </div>
+</div><div class=box>
+    {%for post in posts%}
+       <div class=box> <h1>{{post.name}}</h1>
+        <h2>{{post.title}}</h2>
+        <h3>{{post.post}}
+        </div>  {% endfor%}
+
+        </div>
+    <div class="box">
+        CONTACT ME
+        <div>
+            <ul class="listitem">
+                <li>
+                    Instagram <image style="height:25px ;width:25px;" src="https://i.ibb.co/Dr1Y2gk/5296765-camera-instagram-instagram-logo-icon.png" alt="Profile Picture"> -<a href="https://instagram.com/ankit.sharmaa__?igshid=ZDdkNTZiNTM=">@ankit.sharmaa__</a>
+        
+                </li>
+                <li>
+                    Linkedit <img style="height:25px ;width:25px;" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-512.png" srcset="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-1024.png 2x" alt="linkedit">-<a href="https://www.linkedin.com/in/ankit-kumar-sharma-884a96270?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3WAxJ7EZQ0iEbYymT%2B3C8g%3D%3D">Ankit Kumar Sharma</a>
+                </li>
+                <li>
+                    YouTube <img style="height:25px ;width:25px;" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Youtube_colored_svg-512.png" srcset="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Youtube_colored_svg-1024.png 2x" alt="Pla>y">-<a href="https://youtube.com/@SamWardropLife"> myYouTube
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+   
+</body>
+</html>
